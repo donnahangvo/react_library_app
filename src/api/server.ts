@@ -2,7 +2,7 @@ const token = '6b620f7cf17beb4846051e4f05ca5b87c065157272307d47'
 
 export const server_calls = {
     get: async () => { 
-        const response = await fetch(`https://library-app-zl25.onrender.com/api/contacts`,
+        const response = await fetch(`https://library-app-zl25.onrender.com/api/library`,
         {
             method: 'GET',
             headers: {
@@ -21,7 +21,7 @@ export const server_calls = {
     },
     
     create: async (data: any = {}) => {
-        const response = await fetch(`https://library-app-zl25.onrender.com/api/contacts`,
+        const response = await fetch(`https://library-app-zl25.onrender.com/api/library`,
         {
             method: 'POST',
             headers: {
@@ -41,7 +41,7 @@ export const server_calls = {
     },
 
     update: async (id: string, data:any = {}) => {
-        const response = await fetch(`https://library-app-zl25.onrender.com/api/contacts/${id}`,
+        const response = await fetch(`https://library-app-zl25.onrender.com/api/library/${id}`,
         {
             method: 'POST',
             headers: {
@@ -61,7 +61,7 @@ export const server_calls = {
     },
 
     delete: async (id: string) => {
-        const response = await fetch(`https://library-app-zl25.onrender.com/api/contacts/${id}`,
+        const response = await fetch(`https://library-app-zl25.onrender.com/api/library/${id}`,
         {
             method: 'DELETE',
             headers: {

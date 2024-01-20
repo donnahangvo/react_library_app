@@ -36,7 +36,7 @@ const LibraryForm = ( props:LibraryFormProps) => {
 
       server_calls.create(store.getState())
       setTimeout(() => {window.location.reload()}, 1000);
-
+      event.target.reset()
     }
   }
 
